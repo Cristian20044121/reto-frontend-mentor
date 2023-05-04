@@ -1,0 +1,396 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+:root{
+    --color-button-ios: #5dccbb;
+    --color-button-ios-hover: #5cb5a4;
+    --color-button-mac: #8796ff;
+    --color-button-mac-hover:#8393f6;
+    --color-titles: #4c545b;
+    --color-links-hover: #29b3a0;
+    --color-text: #a2a6a8;
+    --background-footer: #f5f6f8;
+    --typography:'Bai Jamjuree', sans-serif;
+}
+
+body{
+    background: #ffff;
+    font-size: 18px;
+    font-family: var(--typography);
+    margin: 0;
+}
+a{text-decoration: none;}
+h1,h2,h3{
+    color: var(--color-titles);
+    font-weight: bold;
+}
+p{
+    color: var(--color-text);
+    font-size: 17px;
+}
+
+/* header  */
+header{
+    background-image: url(../img/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 100px;
+}
+header>img{
+    width: 100px;
+    height: 100px;
+}
+header > div{
+    text-align: center;
+}
+.header-container-info-buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: 0 auto;
+}
+.header-container-info-buttons a:nth-child(1){
+    background-color: var(--color-button-ios);
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+    width: 40%;
+}
+.header-container-info-buttons a:nth-child(1):hover{
+    box-shadow: 0px 3px 2px var(--color-button-ios-hover);
+    transition: all .4s ease;
+}
+.header-container-info-buttons a:nth-child(2){
+    background-color: var(--color-button-mac);
+    border-radius:20px;
+    padding: 10px;
+    color: white;
+    width: 40%;
+}
+.header-container-info-buttons a:nth-child(2):hover{
+    box-shadow: 0px 3px 2px var(--color-button-mac-hover);
+    transition: all .4s ease;
+}
+
+/* info-clipboard  */
+.container-clipboard .introduction{
+    width: 50%;
+    margin: 100px auto;
+    text-align: center;
+}
+.container-clipboard-info{
+    display: flex;
+    gap: 80px;
+    width: 80%;
+    margin-top: 80px;
+}
+.container-clipboard-info>div:nth-child(1) img{
+    width:1000px;
+}
+.container-clipboard-info div:nth-child(2){
+    margin-top: 200px;
+    width: 30%;
+}
+.container-clipboard-info div:nth-child(2) p{
+    text-align: left;
+}
+
+/* access  */
+.access-clipboard{
+    width: 50%;
+    margin: 200px auto;
+} 
+.access-clipboard h2, p{
+    text-align: center;
+}
+.access-clipboard > img{
+    margin: 60px auto;
+}
+
+.workflow{
+    text-align: center;
+}
+.workflow > p{
+    font-size: 15px;
+}
+.flex{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    margin: 100px auto;
+}
+.flex > div>img{
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+}
+.flex >div{
+    width: 30%;
+}
+.flex >div> p{
+    font-size: 15px;
+}
+
+/* companies  */
+.companies{
+    display: flex;
+    width: 85%;
+    margin: 200px auto;
+    gap: 80px;
+}
+.companies .logo{
+    width: 160px;
+    height:40px;
+}
+
+/* download  */
+.download{
+    width: 50%;
+    margin: 200px auto;
+    text-align: center;
+}
+
+.download > h2{
+    font-weight: bold;
+    font-size: 30px;
+}
+.download > p{
+    font-size: 18px;
+}
+.download > div{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.download > div > a:nth-child(1){
+    background-color: var(--color-button-ios);
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+    width: 40%;
+}
+.download > div > a:nth-child(1):hover{
+    box-shadow: 0px 3px 2px var(--color-button-ios-hover);
+    transition: all .4s ease;
+}
+.download > div > a:nth-child(2){
+    background-color: var(--color-button-mac);
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+    width: 40%;
+}
+.download > div > a:nth-child(2):hover{
+    box-shadow: 0px 3px 2px var(--color-button-mac-hover);;
+    transition: all .4s ease;
+}
+
+
+/* footer  */
+footer{
+    background-color: var(--background-footer);
+    padding: 50px;
+}
+footer .links{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+footer .links>img{
+    width: 50px;
+    height: 50px;
+}
+
+footer .links > div:nth-last-child(1) img{
+    width: 20px;
+    height: 20px;
+}
+footer .links>div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+footer .links a{
+    color: var(--color-text);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+footer .links a:hover{
+    color: var(--color-links-hover);
+}
+
+footer .links div:nth-last-child(1){
+    flex-direction: row;
+    gap: 20px;
+}
+
+footer .links a>img:hover{
+    background: #29b3a0;
+}
+.attribution { font-size: 14px; text-align: center;margin-top: 40px; }
+.attribution a { color: hsl(228, 45%, 44%); }
+.attribution a:hover { color: hsl(228, 45%, 50%); }
+
+
+
+/* media query */
+@media screen and (min-width: 769px) and (max-width: 1600px) {
+    header{
+        width: 89%;
+    }
+    .header-container-info-buttons{
+        width: 90%;
+    }
+    /* info clipboard  */
+    .container-clipboard-info{
+        width: 100%;
+        gap: 60px;
+    }
+    .container-clipboard-info>div:nth-child(1) img{
+        width: 500px;
+    }
+    .container-clipboard-info div:nth-child(2){
+        width: 50%;
+        margin-top: 100px;
+    }
+    /* access  */
+    .access-clipboard{
+        width: 100%;
+    }
+    /* companies  */
+    .companies{
+        width: 100%;
+        gap: 50px;
+    }
+    .companies .logo{
+        width: 140px;
+        height:40px;
+    }
+    footer{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    header{
+        padding: 10px;
+    }
+    .header-container-info{
+        width: 100%;
+    }
+    .header-container-info-buttons{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        gap: 20px;
+    }
+    .header-container-info-buttons a:nth-child(1){
+        width: 90%;
+        padding: 15px;
+    }
+    .header-container-info-buttons a:nth-child(2){
+        width: 90%;
+        padding: 15px;
+    }
+
+    /* info clipboard  */
+    .container-clipboard .introduction{
+        width: 80%;
+    }
+    .container-clipboard-info{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0px auto;
+    }
+    .container-clipboard-info>div:nth-child(1) img{
+        width: 300px;
+    }
+    .container-clipboard-info div:nth-child(2){
+        width: 100%;
+        margin-top: 0px;
+        text-align: center;
+    }
+    .container-clipboard-info div:nth-child(2) p{
+        text-align: center;
+    }
+    /* access  */
+    .access-clipboard{
+        width: 90%;
+    }
+    .access-clipboard p{
+        font-size: 18px;
+    }
+    .access-clipboard > img{
+        width: 360px;
+    }
+    .workflow{
+        text-align: center;
+        width: 80%;
+        margin: 0px auto;
+    }
+    .workflow > p{
+        font-size: 15px;
+    }
+    .flex{
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+    .flex > div>img{
+        width: 50px;
+    }
+    .flex div{
+        width: 100%;
+    }
+    .flex div>p{
+        font-size: 16px;
+    }
+    /* companies  */
+    .companies{
+        flex-direction: column;
+        align-items: center;
+    }
+    /* download  */
+    .download{
+        width: 90%;
+    }
+    .download > p{
+        font-size: 18px;
+    }
+    .download > div{
+        flex-direction: column;
+        align-items: center;
+    }
+    .download > div > a:nth-child(1){
+        width: 90%;
+        padding: 15px;
+    }
+    .download > div > a:nth-child(2){
+        width: 90%;
+        padding: 15px;
+    }
+
+
+    /* footer  */
+   footer .links{
+    flex-direction: column; 
+    align-items: center;
+    gap: 10px;
+   }
+    footer .links>div{
+        text-align: center;
+    }
+    footer .links a{
+    margin: 10px;
+    }
+}
